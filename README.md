@@ -8,6 +8,7 @@ Docker-compose used from [DigitalOcean](https://www.digitalocean.com/community/t
 $ cd greenco // if not in root of project
 $ docker run --rm -v $(pwd):/app composer install
 $ sudo chown -R $USER:$USER ./
+$ mv env.example .env
 $ docker-compose up -d --build
 $ docker-compose exec app php artisan migrate:refresh --seed
 ```
